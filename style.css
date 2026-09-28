@@ -38,8 +38,11 @@ body {
    margin-left:0.4rem;
 }
 .header p{
-    color: rgb(7, 27, 27);
+    color: rgb(87, 187, 202);
     font-size:1.2rem;
+    font-weight: 600;
+
+;
 }
 
 .headcontent{
@@ -47,7 +50,13 @@ body {
     display:flex;
     gap:1rem;
 }
-
+.headcontent a{
+    color: wheat;
+    text-decoration: none;
+}
+.headcontent a:hover{
+    color: white;
+}
 .headcart{
         display: flex;
         gap:0.8rem;
@@ -61,7 +70,7 @@ body {
 }
 #Getstarted{
     display: flex;
-    background-color:white;
+    background-color:rgb(103, 58, 58);
     height: 2rem;
     border-radius: 1rem;
     width:4rem;
@@ -72,7 +81,8 @@ body {
 
 }
 #Getstarted p{
-    font-size: 0.7rem;
+    font-size: 0.5rem;
+    color: white;
 
 }
 
@@ -175,10 +185,21 @@ body {
 }
 .addtask{
      height: 2rem; width:20rem; background-color: rgba(47, 45, 45, 0.3); border:none; border-radius:1rem; color:#7f5468; margin:0;
-     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Dancing Script", cursive;
+
+
 
 }
 
+.addtaskborder:focus{
+    border:none;
+    outline:none;
+
+}
+.addtask:focus{
+    border:none;
+    outline:none;
+}
 
 .checkbox {
     appearance: none;
@@ -204,7 +225,7 @@ body {
     padding: 0;
     margin-top:1.7rem;
 }
-.submit{
+.add_button{
     margin-top:1.2rem;
     background-color:rgb(50, 49, 49);
     border-radius: 1rem;
@@ -230,6 +251,10 @@ body {
     letter-spacing: 3px;
     margin-top:5rem;
     color: transparent;
+    margin-top:12rem;
+    width: 15rem;
+    margin-left:50%;
+    transform: translate(-44%);
 
     background: linear-gradient(
         90deg,
@@ -246,6 +271,11 @@ body {
         0 0 20px rgba(180,180,180,0.15);
 
     background-color:transparent
+
+}
+.idea:hover{
+    box-shadow: 0 0 200px 0.5rem rgb(110, 107, 102);
+    border-radius: 1.5rem;
 }
 #note{
     display: flex;
@@ -261,9 +291,15 @@ body {
     height: 10rem;
     border-style: none;
     border-radius: 1rem;
+    font-family: "Segoe Script", cursive;
+    text-align: center;
 }
 #note:hover{
     background-color: rgba(48, 50, 48, 0.2);
+}
+#note:focus{
+    outline: none;
+    border:none
 }
 @media (max-width:600px){
     .intro{
@@ -276,3 +312,21 @@ body {
     .checkbox{
         transform: scale(2);}
     }
+
+.delete{
+    background-color:transparent;
+    opacity: 0.4;
+    color: #bc3232;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    margin:0;
+    padding:0;
+    content: 0;
+
+}
+.del :hover{
+    background-color: #553f3f;
+    border-style:none ;
+    color:rgb(159, 138, 111)
+}
