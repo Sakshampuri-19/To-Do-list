@@ -61,8 +61,8 @@ function createTask(taskText) {
         localStorage.setItem("tasks", JSON.stringify(tasks));
     });
 }
-//creating enew task weith value '' +as when user clicks on add+ there we want to create a new empty input for them
 
+//  creatong task weith value '' +as when user clicks on add+ there we want to create a new empty input for them   createTask("");
 submit.addEventListener("click", function () {
     createTask("");
 });
