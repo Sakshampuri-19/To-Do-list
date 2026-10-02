@@ -2,13 +2,10 @@
     padding:0;
     margin:0;
 }
-html, body {
-    margin: 0;
-    min-height: 100%;
-}
+
 
 body {
-    min-height: 100vh;
+    
     background-image: url("fbg.png");
     background-size: cover;
     background-position: center;
@@ -47,7 +44,7 @@ body {
 
 .headcontent{
     color: rgb(112, 116, 120);
-    display:flex;
+     display:flex;
     gap:1rem;
 }
 .headcontent a{
@@ -64,7 +61,7 @@ body {
 
 .headcart i{
     margin-top:0.3rem;
-    font-size: 1.3rem
+    font-size: 1.3rem;
 
     
 }
@@ -87,12 +84,12 @@ body {
 }
 
 .header:hover{
-    box-shadow:0 0 10px 0.1rem rgb(146, 136, 136)
+    box-shadow:0 0 10px 0.1rem rgb(146, 136, 136);
 }
 @media (max-width:600px){
     .header{
         width:80%;
-        height: auto;
+        height:auto;
         min-height: 1rem;
         
     }
@@ -184,14 +181,20 @@ body {
 
 }
 .addtask{
-     height: 2rem; width:20rem; background-color: rgba(47, 45, 45, 0.3); border:none; border-radius:1rem; color:#7f5468; margin:0;
+     height: 2rem;
+      width:20rem;
+     background-color:
+      rgba(47, 45, 45, 0.3);
+     border:none; border-radius:1rem;
+      color:#7f5468;
+     margin:0;
     font-family: "Dancing Script", cursive;
 
 
 
 }
 
-.addtaskborder:focus{
+.main_task:focus{
     border:none;
     outline:none;
 
@@ -209,11 +212,11 @@ body {
     width: 1.5rem;
     background-color: rgba(86, 17, 59, 0.5);
     border-radius: 0.4rem;
-    accent-color: rgb(143, 50, 50);
+    
 
 }
 .checkbox:checked {
-    background-color: #84194f;
+    background-color: #921554;
 }
 
 .taskContainer {
@@ -278,19 +281,15 @@ body {
     border-radius: 1.5rem;
 }
 #note{
-    display: flex;
-    justify-self: end;
     margin-top:1rem;
    width: 100%;
     background-color: transparent;
     border:none;
     height: 2rem;
     color:#999;
-    border:0.45px solid rgb(92, 80, 80);
     border-radius: 0.3rem;
     height: 10rem;
     border-style: none;
-    border-radius: 1rem;
     font-family: "Segoe Script", cursive;
     text-align: center;
 }
@@ -329,14 +328,12 @@ body {
 
 .delete{
     background-color:transparent;
-    opacity: 0.4;
+    opacity:0.4;
     color: #bc3232;
     width: 2rem;
     height: 2rem;
     border-radius: 1rem;
-    margin:0;
-    padding:0;
-    content: 0;
+    
 
 }
 .del :hover{
